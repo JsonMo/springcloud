@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://192.168.1.7:1080/msj/cloudconfig.git
+          username: msj
+          password: msj123456
+          search-paths: SC_BOOK_CONFIG
+  application:
+    name: config-test
+server:
+  port: 7070
